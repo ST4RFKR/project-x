@@ -1,0 +1,36 @@
+{
+  "Header": {
+    "Links": {
+      "features": "Features",
+      "howItWorks": "How it works",
+      "pricing": "Pricing",
+      "reviews": "Reviews",
+      "contacts": "Contacts"
+    },
+    "LanguageSwitcher": {
+      "Lang": {
+        "en": "English",
+        "uk": "Ukrainian",
+        "ru": "Russian"
+      }
+    }
+  },
+  "HomePage": {
+    "Hero": {
+      "title": "Fleet and workforce control — ",
+      "flipPrefix": "without",
+      "flipWords": [
+        "chaos",
+        "manual tracking",
+        "time loss",
+        "data loss",
+        "blind spots"
+      ],
+      "description": "Track vehicle entry and exit, routes, time on site, and upload photo reports — even offline. All data syncs automatically and is ready for accounting and reporting.",
+      "actions": {
+        "requestDemo": "Request a demo",
+        "howItWorks": "How it works"
+      }
+    }
+  }
+}
