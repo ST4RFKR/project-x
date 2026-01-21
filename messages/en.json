@@ -7,6 +7,8 @@
       "reviews": "Reviews",
       "contacts": "Contacts"
     },
+    "login": "Login",
+    "downloadApp": "Download app",
     "LanguageSwitcher": {
       "Lang": {
         "en": "English",
@@ -15,9 +17,32 @@
       }
     }
   },
+  "AuthModal": {
+    "signIn": {
+      "title": "Welcome back",
+      "subtitle": "Sign in to your account to continue",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "noAccount": "Don't have an account?",
+      "signUpLink": "Sign up"
+    },
+    "signUp": {
+      "title": "Create an account",
+      "subtitle": "Get started with your free account",
+      "name": "Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign up",
+      "hasAccount": "Already have an account?",
+      "signInLink": "Sign in"
+    }
+  },
   "HomePage": {
     "Hero": {
-      "title": "Fleet and workforce control — ",
+      "badge": "Built for businesses",
+      "title": "Fleet and workforce ",
       "flipPrefix": "without",
       "flipWords": [
         "chaos",
@@ -28,9 +53,131 @@
       ],
       "description": "Track vehicle entry and exit, routes, time on site, and upload photo reports — even offline. All data syncs automatically and is ready for accounting and reporting.",
       "actions": {
-        "requestDemo": "Request a demo",
+        "sigUp": "Start free trial",
         "howItWorks": "How it works"
       }
+    },
+    "Features": {
+      "title": "Everything you need for fleet control",
+      "subtitle": "Modern tools to track vehicles, routes, and employees — even without internet connection",
+      "nfcTracking": {
+        "title": "NFC Vehicle Tracking",
+        "description": "Attach NFC tags to vehicles. Scan to instantly log entry/exit with timestamp and location."
+      },
+      "offlineMode": {
+        "title": "Offline Mode",
+        "description": "Works without internet. All data syncs automatically when connection is restored."
+      },
+      "routeTracking": {
+        "title": "Route Tracking",
+        "description": "Track complete routes with GPS. See where vehicles have been and for how long."
+      },
+      "photoReports": {
+        "title": "Photo Reports",
+        "description": "Upload photos of cargo, documents, or site conditions. Everything stored in the cloud."
+      },
+      "timeTracking": {
+        "title": "Time on Site",
+        "description": "Know exactly how long each vehicle spent at each location. Perfect for billing."
+      },
+      "analytics": {
+        "title": "Reports & Analytics",
+        "description": "Generate reports for accounting. Track mileage, time, and validate against work orders."
+      }
+    },
+    "HowItWorks": {
+      "title": "How it works",
+      "subtitle": "Get started in minutes. No complex setup required.",
+      "step1": {
+        "title": "Attach NFC tags",
+        "description": "Stick NFC tags on each vehicle. One-time setup that takes seconds."
+      },
+      "step2": {
+        "title": "Scan on entry/exit",
+        "description": "Staff scans the tag when vehicle enters or leaves. Add photos if needed."
+      },
+      "step3": {
+        "title": "Automatic tracking",
+        "description": "Route points are recorded. GPS data captured. Works offline too."
+      },
+      "step4": {
+        "title": "View & export data",
+        "description": "See real-time status in dashboard. Export reports for accounting."
+      }
+    },
+    "Pricing": {
+      "title": "Simple, transparent pricing",
+      "subtitle": "Choose the plan that fits your fleet",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "ua": "UAH",
+      "month": "/month",
+      "starter": {
+        "title": "Starter",
+        "description": "Perfect for small fleets",
+        "price": "0",
+        "features": [
+          "Up to 5 vehicles",
+          "Real-time GPS tracking",
+          "Offline mode",
+          "Basic reports",
+          "Email support"
+        ]
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "For growing companies",
+        "price": "499",
+        "features": [
+          "Up to 20 vehicles",
+          "Route history (30 days)",
+          "Photo reports",
+          "Driver identification",
+          "Priority support"
+        ]
+      },
+      "business": {
+        "title": "Business",
+        "description": "For large organizations",
+        "price": "999",
+        "features": [
+          "Unlimited vehicles",
+          "Unlimited history",
+          "API Access",
+          "Advanced analytics",
+          "Dedicated manager",
+          "Fuel control"
+        ]
+      },
+      "selectPlan": "Select plan"
+    },
+    "Benefits": {
+      "security": "Secure & encrypted",
+      "speed": "Fast sync",
+      "team": "Team management",
+      "offline": "Works offline",
+      "ctaTitle": "Ready to take control of your fleet?",
+      "ctaDescription": "Start your free trial today. No credit card required. Cancel anytime.",
+      "ctaButton": "Start free trial",
+      "feature1": "14-day free trial",
+      "feature2": "No credit card required",
+      "feature3": "Cancel anytime"
     }
+  },
+  "Footer": {
+    "description": "Modern fleet and workforce tracking solution for Ukrainian businesses",
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "mobileApp": "Mobile App",
+    "company": "Company",
+    "about": "About Us",
+    "blog": "Blog",
+    "careers": "Careers",
+    "contact": "Contact",
+    "address": "Kyiv, Ukraine",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   }
 }

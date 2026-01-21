@@ -1,9 +1,5 @@
-import { BackgroundRippleEffectDemo } from "@/shared/components/common/main/main";
+import { Main } from "@/shared/components/common/main/main";
 
 export default function Home() {
-  return (
-    <div>
-      <BackgroundRippleEffectDemo />
-    </div>
-  );
+  return <Main />;
 }

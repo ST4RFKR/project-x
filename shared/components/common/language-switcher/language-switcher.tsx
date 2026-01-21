@@ -25,7 +25,7 @@ export function LanguageSwitcher() {
       <Popover>
         <PopoverTrigger asChild>
           <Button variant="outline" className="border-none bg-transparent">
-            <Globe />
+            <Globe className="text-emerald-500" />
           </Button>
         </PopoverTrigger>
         <PopoverContent
@@ -37,7 +37,7 @@ export function LanguageSwitcher() {
             <Button
               key={l.name}
               className={cn(
-                "flex items-center gap-2 p-2 text-light-100 max-w-37.5 w-full"
+                "flex items-center gap-2 p-2 text-light-100 max-w-37.5 w-full",
               )}
               disabled={l.locale === locale}
               variant={"ghost"}
