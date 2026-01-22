@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { Check } from "lucide-react";
 import { Container } from "@/shared/components/ui/container";
 import { Button } from "@/shared/components/ui/button";
-import { cn } from "@/lib/utils";
+import { cn } from "@/shared/lib/utils";
 
 export const Pricing = () => {
   const tPricing = useTranslations("HomePage.Pricing");
@@ -117,9 +117,7 @@ export const Pricing = () => {
                 <span
                   className={cn(
                     "text-4xl font-bold",
-                    i === 1
-                      ? "text-white"
-                      : "text-neutral-900 dark:text-white",
+                    i === 1 ? "text-white" : "text-neutral-900 dark:text-white",
                   )}
                 >
                   {tPricing("ua")} {plan.price}

@@ -10,7 +10,7 @@ import { NfcCarAnimation } from "@/shared/components/common/animation-icon/step-
 import { NfcScanAnimationStep2 } from "@/shared/components/common/animation-icon/step-2";
 import { NfcTrackingAnimationStep3 } from "@/shared/components/common/animation-icon/step-3";
 import { NfcExportAnimationStep4 } from "@/shared/components/common/animation-icon/step-4";
-import { cn } from "@/lib/utils";
+import { cn } from "@/shared/lib/utils";
 
 export const HowItWorks = () => {
   const tHowItWorks = useTranslations("HomePage.HowItWorks");

@@ -1,8 +1,8 @@
 import { getRequestConfig } from "next-intl/server";
 
 import { Locale } from "next-intl";
-import { getLocaleFromHeaders } from "@/lib/server/get-locale-from-header";
-import { getLocaleFromCookie } from "@/lib/server/get-local-from-cookie";
+import { getLocaleFromHeaders } from "@/shared/lib/server/get-locale-from-header";
+import { getLocaleFromCookie } from "@/shared/lib/server/get-local-from-cookie";
 
 const locales = ["en", "uk", "ru"] satisfies Locale[];
 
