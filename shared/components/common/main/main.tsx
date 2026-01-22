@@ -149,10 +149,10 @@ export function Main() {
   return (
     <div className="relative">
       {/* Hero Section */}
-      <section className="relative flex min-h-[calc(100vh-4rem)] w-full overflow-hidden">
+      <section className="relative flex w-full overflow-hidden">
         <BackgroundRippleEffect />
         <Container>
-          <div className="relative z-10 mt-10 max-w-3xl">
+          <div className="relative z-10 mt-8 max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white/80 px-4 py-2 text-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/80">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
@@ -176,7 +176,7 @@ export function Main() {
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <AuthModal>
-                <Button size="lg" className="group">
+                <Button size="lg" className="group w-full">
                   {t("actions.sigUp")}
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
@@ -196,14 +196,29 @@ export function Main() {
               </Button>
             </div>
 
-            <div className="mt-12 flex flex-wrap items-center gap-6 border-t border-neutral-200 pt-8 dark:border-neutral-800">
+            <div
+              className="
+    mt-12
+    border-t border-neutral-200 pt-8
+    dark:border-neutral-800
+
+    grid grid-cols-[max-content_max-content]
+    gap-x-12 gap-y-6
+    justify-center
+
+    md:flex md:flex-nowrap md:justify-center
+  "
+            >
               {benefits.map((benefit, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-400"
+                  className="
+        flex items-center gap-2
+        text-sm text-neutral-600 dark:text-neutral-400
+      "
                 >
-                  <benefit.icon className="h-4 w-4 text-green-500" />
-                  <span>{benefit.text}</span>
+                  <benefit.icon className="h-4 w-4 text-green-500 shrink-0" />
+                  <span className="whitespace-nowrap">{benefit.text}</span>
                 </div>
               ))}
             </div>
@@ -465,13 +480,15 @@ export function Main() {
                 {tBenefits("ctaDescription")}
               </p>
               <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-                <Button
-                  size="lg"
-                  className="bg-emerald-600 text-white hover:bg-emerald-500 border-0"
-                >
-                  {tBenefits("ctaButton")}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <AuthModal>
+                  <Button
+                    size="lg"
+                    className="bg-emerald-600 text-white hover:bg-emerald-500 border-0"
+                  >
+                    {tBenefits("ctaButton")}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </AuthModal>
               </div>
 
               {/* Features list */}
@@ -596,16 +613,16 @@ export function Main() {
                     href="mailto:hello@ingress.ua"
                     className="hover:text-emerald-600 dark:hover:text-emerald-500 transition-colors"
                   >
-                    hello@ingress.ua
+                    example@ingress.ua
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
                   <a
-                    href="tel:+380501234567"
+                    href="tel:+380696969696"
                     className="hover:text-emerald-600 dark:hover:text-emerald-500 transition-colors"
                   >
-                    +38 (050) 123-45-67
+                    +38 (069) 696-96-96
                   </a>
                 </li>
                 <li className="flex items-start gap-2">
@@ -618,7 +635,9 @@ export function Main() {
 
           {/* Bottom */}
           <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-neutral-200 pt-8 text-sm text-neutral-600 md:flex-row dark:border-neutral-800 dark:text-neutral-400">
-            <p>© 2024 Ingress. {tFooter("rights")}</p>
+            <p>
+              © {new Date().getFullYear()} Ingress. {tFooter("rights")}
+            </p>
             <div>
               {"Developed with 💚 by "}
               <a
