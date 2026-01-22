@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/shared/widgets/header/header";
+import { Header } from "@/widgets/header/header";
 import { NextIntlClientProvider } from "next-intl";
-import { Container } from "@/shared/components/common/ui/container";
+import { Container } from "@/shared/components/ui/container";
 
 const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",

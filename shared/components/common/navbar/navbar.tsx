@@ -10,7 +10,7 @@ import {
   MobileNavMenu,
 } from "@/shared/components/common/resizable-navbar";
 import { useState } from "react";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import { LanguageSwitcher } from "../language-switcher/language-switcher";
 import { AuthModal } from "../auth-modal";
 import { useTranslations } from "next-intl";

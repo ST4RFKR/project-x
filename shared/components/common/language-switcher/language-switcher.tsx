@@ -1,11 +1,11 @@
 "use client";
 import { Locale, useLocale, useTranslations } from "next-intl";
-import { Button } from "../ui/button";
-import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Globe } from "lucide-react";
 import { setLocaleInCookie } from "@/lib/server/set-locale-in-cookie";
 import { Flags } from "./flags";
 import { cn } from "@/lib/utils";
+import { Popover, PopoverContent, PopoverTrigger } from "../../ui/popover";
+import { Button } from "../../ui/button";
 
 export function LanguageSwitcher() {
   const locale = useLocale();

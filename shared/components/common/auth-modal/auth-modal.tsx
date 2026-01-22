@@ -8,9 +8,9 @@ import {
   ModalTrigger,
   ModalBody,
   ModalContent,
-} from "@/shared/components/common/ui/animated-modal";
-import { Input } from "@/shared/components/common/ui/input";
-import { Label } from "@/shared/components/common/ui/label";
+} from "@/shared/components/ui/animated-modal";
+import { Input } from "@/shared/components/ui/input";
+import { Label } from "@/shared/components/ui/label";
 
 type AuthView = "signIn" | "signUp";
 

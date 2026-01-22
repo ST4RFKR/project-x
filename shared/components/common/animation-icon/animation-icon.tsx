@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Sparkles } from "lucide-react";
+import { Popover, PopoverContent, PopoverTrigger } from "../../ui/popover";
 
 export function AnimationIcon({
   isOpen,
