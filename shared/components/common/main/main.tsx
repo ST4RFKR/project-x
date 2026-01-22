@@ -149,7 +149,7 @@ export function Main() {
   return (
     <div className="relative">
       {/* Hero Section */}
-      <section className="relative flex w-full overflow-hidden">
+      <section className="relative flex w-full">
         <BackgroundRippleEffect />
         <Container>
           <div className="relative z-10 mt-8 max-w-3xl">
@@ -202,9 +202,11 @@ export function Main() {
     border-t border-neutral-200 pt-8
     dark:border-neutral-800
 
-    grid grid-cols-[max-content_max-content]
-    gap-x-12 gap-y-6
+    grid grid-cols-2
+    gap-x-6 gap-y-6
     justify-center
+
+    sm:grid-cols-[max-content_max-content]
 
     md:flex md:flex-nowrap md:justify-center
   "
@@ -218,7 +220,7 @@ export function Main() {
       "
                 >
                   <benefit.icon className="h-4 w-4 text-green-500 shrink-0" />
-                  <span className="whitespace-nowrap">{benefit.text}</span>
+                  <span className="sm:whitespace-nowrap">{benefit.text}</span>
                 </div>
               ))}
             </div>
