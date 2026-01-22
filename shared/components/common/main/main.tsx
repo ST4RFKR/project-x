@@ -28,6 +28,11 @@ import {
   Check,
 } from "lucide-react";
 import { AuthModal } from "../auth-modal";
+import { AnimationIcon } from "../animation-icon/animation-icon";
+import { NfcCarAnimation } from "../animation-icon/step-1";
+import { NfcScanAnimationStep2 } from "../animation-icon/step-2";
+import { NfcTrackingAnimationStep3 } from "../animation-icon/step-3";
+import { NfcExportAnimationStep4 } from "../animation-icon/step-4";
 
 export function Main() {
   const t = useTranslations("HomePage.Hero");
@@ -36,6 +41,7 @@ export function Main() {
   const tBenefits = useTranslations("HomePage.Benefits");
   const tPricing = useTranslations("HomePage.Pricing");
   const tFooter = useTranslations("Footer");
+  const [openStep, setOpenStep] = useState<number | null>(null);
 
   const [isYearly, setIsYearly] = useState(false);
 
@@ -97,24 +103,30 @@ export function Main() {
       icon: Truck,
       title: tHowItWorks("step1.title"),
       description: tHowItWorks("step1.description"),
+      animateComponent: <NfcCarAnimation isVisible={openStep === 0} />,
     },
     {
       number: "02",
       icon: Smartphone,
       title: tHowItWorks("step2.title"),
       description: tHowItWorks("step2.description"),
+      animateComponent: <NfcScanAnimationStep2 isVisible={openStep === 1} />,
     },
     {
       number: "03",
       icon: MapPin,
       title: tHowItWorks("step3.title"),
       description: tHowItWorks("step3.description"),
+      animateComponent: (
+        <NfcTrackingAnimationStep3 isVisible={openStep === 2} />
+      ),
     },
     {
       number: "04",
       icon: BarChart3,
       title: tHowItWorks("step4.title"),
       description: tHowItWorks("step4.description"),
+      animateComponent: <NfcExportAnimationStep4 isVisible={openStep === 3} />,
     },
   ];
 
@@ -298,7 +310,16 @@ export function Main() {
                         <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 font-bold text-sm">
                           {step.number}
                         </span>
-                        <step.icon className="w-6 h-6 text-neutral-700 dark:text-neutral-300" />
+                        <AnimationIcon
+                          isOpen={openStep === i}
+                          setIsOpen={(open) => setOpenStep(open ? i : null)}
+                          title={step.title}
+                          suptitle={`Step ${step.number}`}
+                          description={step.description}
+                          animateComponent={step.animateComponent}
+                        >
+                          <step.icon className="w-6 h-6 text-neutral-700 dark:text-neutral-300 cursor-pointer" />
+                        </AnimationIcon>
                       </div>
                       <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-2">
                         {step.title}
